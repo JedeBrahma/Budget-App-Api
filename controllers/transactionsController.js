@@ -2,8 +2,8 @@ const express = require("express");
 const transactions = express.Router();
 
 const transactionsData = require("../models/transactions.js");
-const { validateURL } = require("../models/validations");
-console.log(transactionsData["2"]);
+const { validateValues } = require("../models/validations");
+// console.log(transactionsData["2"]);
 
 // index -->
 transactions.get("/", (req, res) => {
