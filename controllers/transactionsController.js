@@ -20,7 +20,7 @@ transactions.get("/:arrayIndex", (req, res) => {
   }
 });
 // create -->
-transactions.post("/", validateURL, (req, res) => {
+transactions.post("/", validateValues, (req, res) => {
     transactionsData.push(req.body);
     res.json(transactionsData[transactionsData.length - 1]);
 });
